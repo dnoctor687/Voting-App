@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('assets/background.jpg') no-repeat center center fixed; /* Ensure background covers the screen */
+    background-size: cover;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* align it to the top */
+    height: auto; 
+    padding: 20px 0;
+}
+
+.title-container img {
+    max-width: 25%; 
+    max-height: 35vh; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.question-container {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Space between the title and the question */
+    font-size: 40px; 
+    font-weight: bold; /* Question text bold */
+    color: white; 
+    font-family: 'Outfit', sans-serif; 
+    padding: 0 20px; /* Add padding to ensure text does not touch the screen edges */
+}
+.poll-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.option {
+    margin: 15px; 
+}
+
+.poll-radio {
+    display: none; /* Hide the radio button */
+}
+
+.poll-label {
+    display: inline-block;
+    background-color: rgba(140, 140, 140, 0.5); /* Transparent gray background */
+    color: #FFFFFF; 
+    padding: 15px 25px; /* Padding inside the box */
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    border: 2px solid #8C8C8C; /* Grey border */
+    border-radius: 8px; /* Rounded corners for the box */
+
+    cursor: pointer; /* Change mouse cursor to indicate clickable */
+
+    margin: 10px; /* Space between options */
+    width: calc(35% - 20px); /* Full width taking into account padding and margin */
+    box-sizing: border-box; 
+}
+
+.poll-radio:checked + .poll-label {
+    background-color: #a447e2; /* Darker background for selected option */
+    color: white; /* Keep text color white for selected option */
+    border-color: #FFFFFF; /* White border for selected state */
+}
+
+
+.poll-label, .poll-form button,.result-label {
+    width: calc(50% - 40px); 
+    padding: 15px 25px; 
+    margin: 10px auto; 
+    display: block; 
+    box-sizing: border-box; 
+}
+
+
+.poll-form button {
+    background-color: #FFFFFF; 
+    color: #a447e2; /* text color */
+    border: 2px solid #8C8C8C; 
+    font-family: 'Outfit', sans-serif; 
+    font-size: 16px; 
+    cursor: pointer; /* Cursor indicates clickable */
+    border-radius: 8px; /* Rounded corners to match options */
+}
+
+.poll-form button:hover {
+    background-color: #a447e2; /* Lilac background on hover */
+    color: #FFFFFF; /* White text on hover */
+    border-color: #a447e2; /* Lilac border on hover */
+}
+
+.results-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-option {
+    width: calc(50% - 40px); 
+    margin: 20px auto; /* Center the option */
+    border: 2px solid #8C8C8C; /* Border to match the poll options */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; 
+    display: flex; /*for centering text */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 50px; 
+    font-family: 'Outfit', sans-serif; 
+    font-size: 16px; 
+    color: white; 
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    background-color: rgba(140, 140, 140, 0.5); /* Default background color, shown for the unfilled part */
+}
+
+
+.result-label {
+    color: white; 
+    height: 100%; /* Fill the height of its container */
+    width: 150%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Outfit', sans-serif; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+    white-space: nowrap; /* Keep text in a single line */
+    overflow: hidden; 
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+.percentage-text {
+    margin-left: auto; 
+    color: white; 
+}

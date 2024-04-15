@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/specimen/Outfit?query=outfit" rel="stylesheet">
+    <!-- Import font for text-->
+</head>
+<body>
+   
+    <div class='title-container'>
+        <img src = "assets/logo.png"> <!-- Import dizapli logo -->
+    </div>
+    
+    <div class="question-container">
+        <p>Who will win the <br> 2024 Grand National?</p>
+    </div>
+
+        <form class="poll-form" id="voteForm" data-poll-id ="1">
+            <div class="option">
+                <input type="radio" id="option1" name="poll" value=1 class="poll-radio">
+                <label for="option1" class="poll-label">Vaniller</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="poll" value=2 class="poll-radio">
+                <label for="option2" class="poll-label">Corach Rambler</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="poll" value=3 class="poll-radio">
+                <label for="option3" class="poll-label">Mahler Mission</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="poll" value=4 class="poll-radio">
+                <label for="option4" class="poll-label">Noble Yeats</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <script src="script.js"></script>
+</body>
+</html>
